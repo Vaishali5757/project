@@ -1,0 +1,56 @@
+<html>
+<head>
+<style>
+body{
+background-color:coral;
+}
+h1{
+color:blue;
+font-family:Times New Roman;
+text-decoration:underline;
+text-shadow:2px 2px cyan;
+}
+ul{
+color:darkblue;
+}
+select{
+margin:10px;
+color:blue;
+border:5px;
+border-style:double;
+border-color:magenta;
+}
+table{
+cellspacing:10px;
+cellpadding:5px;
+}
+img{
+float:right;
+width:300px;
+height:300px;
+alt:trouble;
+margin:0px 0px 0px 0px;
+}
+</style>
+<script type="text/javascript">
+function fp(){
+var a=prompt("Enter email id registered with bank","");
+var r=confirm("Are you sure you want to continue?");
+if(r==true)
+alert("You pressed OK,a new password will be sent to the email id!");
+else
+alert("You pressed Cancel!");
+}
+</script>
+</head>
+<body>
+<h1>Trouble logging in</h1><img src="8.jpg">
+<ul>
+<li>Please note that support for certain issues will be available only after successful login</li></ul>
+<select>
+<option>Forgot My Login Password</option>
+<option>forgot my transaction password</option>
+<option>login unsuccessfull</option></select><br>
+<center>
+<input type="button" name="n" onclick="fp()" value="Next Step"></center>
+</body></html>
