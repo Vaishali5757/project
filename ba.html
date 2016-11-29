@@ -1,0 +1,130 @@
+<html>
+<head>
+<title>
+block atm
+</title>
+<style type="text/css">
+body{
+background-color:aqua;
+background-image:url("7.jpg");
+background-repeat:no-repeat;
+background-position:0px 0px;
+background-size:1500px 1000px;
+background-attachment:scroll;
+}
+legend{
+color:firebrick;
+text-decoration:underline;
+text-shadow:1px 2px yellow; 
+font-size:20px;
+}
+#a{
+cellspacing:6px;
+cellpadding:6px;
+color:red;
+font-size:15px;
+}
+#b{
+cellspacing:6px;
+cellspacing:6px;
+align:center;
+font-size:15px;
+}
+textarea{
+border:3px;
+border-style:solid;
+border-color:green;
+color:crimson;
+font-size:15px;
+}
+select{
+color:blue;
+}
+</style>
+<script type="text/javascript">
+function validate(){
+var x=document.f1.t1.value;
+var y=document.f1.t2.value;
+var z=document.f1.t3.value;
+var p=document.f1.t4.value;
+var exp=/[0-9]{4}-[0-9]{4}-[0-9]{2}-[0-9]{10}$/;
+var phn=/[0-9]{3}$/;
+var ph=/[0-9]{3}-[0-9]{4}$/;
+if((x=="")||(y=="")||(z=="")||(p=="")){
+alert("Please enter the details!");
+return false;
+}
+else if(exp.test(x)==false){
+alert("Invalid Account Number");
+return false;
+}
+else if(phn.test(y)==false){
+alert("Invalid Phone Number");
+return false;
+}
+else if(ph.test(z)==false){
+alert("Invalid Phone Number");
+return false;
+}
+else{
+var r=confirm("Are you sure you want to block ATM?");
+if(r==true)
+alert("You pressed OK,ATM BLOCKED!");
+else
+alert("You pressed Cancel!");
+}
+return true;
+}
+</script>
+</head>
+<body>
+<form name="f1" onsubmit="return validate()">
+<fieldset>
+<legend>BLOCK ATM CARD</legend>
+<table id="a" border=0>
+<tr>
+<td>
+<i>
+Mandatory fields are marked with an asterik(*)</i>
+</td>
+</tr>
+<tr>
+<td>Account Number*</td>
+<td><input type="text" size="30" name="t1"/></td>
+</tr>
+<tr>
+<td>Country</td>
+<td><select>
+<option selected>Select Country</option>
+<option>India</option>
+<option>USA/Canada</option>
+<option>Italy</option>
+<option>France</option>
+<option>Spain</option>
+<option>Russia</option>
+</select>For Canada,choose USA/Canada</td>
+</tr>
+<tr>
+<td>Registered phone number*</td>
+<td><input type="text" size="15" name="t2"/><input type="text" size="30" name="t3"/></td>
+</tr>
+<tr>
+<td>Enter the text shown in the image*</td>
+<td><input type="text" size="30" name="t4"/><input type="text" size="15" value=EE7E7></td>
+</tr>
+</table><center>
+<table id="b">
+<tr>
+<td>
+<input type="submit" name="a" value="Submit"/>
+</td>
+<td>
+<input type="button" name="b" value="Cancel"/>
+</td>
+</tr>
+</table></center>
+<textarea name="comments" rows="3" cols="135">Once a card is blocked,you can't unblock it online.</textarea></li>
+</fieldset>
+</form>
+</body>
+</html>
