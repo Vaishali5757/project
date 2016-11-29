@@ -1,0 +1,52 @@
+<html>
+<head>
+<script type="text/javascript">
+function setbackground()
+{
+window.setTimeout( "setbackground()",500); 
+var index = Math.round(Math.random() * 9);
+
+var ColorValue = "FFFFFF"; 
+
+if(index == 1)
+ColorValue = "FFCCCC"; 
+if(index == 2)
+ColorValue = "CCAFFF"; 
+if(index == 3)
+ColorValue = "A6BEFF"; 
+if(index == 4)
+ColorValue = "99FFFF"; 
+if(index == 5)
+ColorValue = "D5CCBB"; 
+if(index == 6)
+ColorValue = "99FF99"; 
+if(index == 7)
+ColorValue = "FFFF99"; 
+if(index == 8)
+ColorValue = "FFCC99"; 
+if(index == 9)
+ColorValue = "CCCCCC"; 
+
+document.getElementsByTagName("body")[0].style.backgroundColor = "#" + ColorValue;
+}
+</script>
+</head>
+<body onload="setbackground()">
+<h1>About Pishing(Potential Security Threats)</h1>
+<p>
+'Pishing' is a common form of internet privacy. It is deployed to steal users personal and confidential information like bank account numbers,
+net banking passwords,credit card numbers, personal identity details etc.Later the perpetrators may use the information for siphoning money from the victim's
+or run up bills on victim's credit cards. In the worst case one could also become the victims identity theft.A few customers of some other Indian banks have
+been affected by the attempt of pishing in early 2006</p></br>
+<p> We would like to be aware of methodologies in a 'Phishing' attack,do's and dont's in sharing of personal information and the action to be taken in case you fall prey to a pishing attemp</p>
+<h2>Methodologies</h2>
+<ul>
+<li>Phishing attacks use both social engineering and technical subterfuge to steal customers personal identity data and financial account credentials</li>
+<li>Customer receives  a fradulent mail seemingly from a legitimate internet address.</li>
+<li>The email invites the customer to click on a hyperling provided in the mail</li>
+<li>Click on the hyperlink directs the customer to a fake web site that looks similar to the genuine site</li>
+<li>Usually the email will either ise a reward on compliance or  warn of an impending penality on a non comilance.</li>
+<li>Customer is asked to update his personal information, such as passwords and credit card and bank account numbers etc.</li>
+<li>Customer provides personal details in good faith.Clicks on 'submit' button</li>
+<li>He gets an error page.</li>
+<li>Customer falis prey to the phishing attempt</li></ul></body></html>
