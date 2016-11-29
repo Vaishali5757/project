@@ -1,0 +1,63 @@
+<html>
+<head>
+<title>
+login
+</title>
+<script type="text/javascript">
+function validate(){
+var x=document.getElementById("t2").value;
+var y=document.getElementById("t3").value;
+var z=document.getElementById("t1").value;
+if(z==""){
+alert("Username cannot be empty!");
+return false;
+}
+ if(x==""){
+alert("Password cannot be empty!");
+return false;
+}
+ if(y==""){
+alert("Please reenter password for confirmation!");
+return false;
+}
+ if(x!=y){
+alert("Passwords do not match!");
+return false;
+}
+else{
+alert("Passwords Match!");
+var r=confirm("Are you sure you want to login?");
+if(r==true)
+alert("Successfully Logged In");
+document.write("Welcome-");
+document.writeln(z.bold());
+document.write("!");
+document.bgColor="orange";
+document.write("<br>");
+document.write("Click on the links to avail the facilities and submit your queries!");
+return true;
+}
+}
+</script>
+</head>
+<body bgcolor="aqua">
+<center>
+<table border=0 cellspacing="4" cellpadding="4">
+<tr>
+<td>Username:<input type="text" size="30" id="t1"></td>
+<td rowspan="3"><img src="l.jpg" width=200px height=200px alt="login"/></td>
+</tr>
+<tr>
+<td>Password:<input type="password" size="30" id="t2"></td>
+</tr>
+<tr>
+ <td>
+ Confirm Password:<input type="password" id="t3" size="30"/>
+        </td>
+    </tr>
+<td><input type="submit" name="lo" value="Login" onclick="return validate()">
+<input type="reset" name="reset" value="reset"></td>
+</tr>
+</table>
+</center>
+</body>
